@@ -3,79 +3,108 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ZyntexShopping - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>ZyntexShopping — Premium</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="site-header">
+<body class="theme-a"> <!-- change to theme-b or theme-c to switch theme globally -->
+  <header class="site-header glass">
     <div class="container header-inner">
-      <div class="brand">ZyntexShopping</div>
-      <nav>
+      <div class="brand-wrap">
+        <div class="logo">Zyntex<span class="logo-accent">Shopping</span></div>
+        <div class="tag">Premium Natural Products</div>
+      </div>
+
+      <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="about.html">About</a>
         <a href="policies.html">Policies</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn small">Contact</a>
       </nav>
+
+      <div class="theme-controls">
+        <button class="theme-btn" data-theme="theme-a" title="Minimal Light">A</button>
+        <button class="theme-btn" data-theme="theme-b" title="Dark Luxury">B</button>
+        <button class="theme-btn" data-theme="theme-c" title="Gradient Modern">C</button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h1>Welcome to ZyntexShopping</h1>
-        <p>Your trusted store for high-quality products at honest prices.</p>
-        <a class="btn" href="products.html">Shop Now</a>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Natural products, premium experience</h1>
+          <p class="lead">ZyntexShopping brings carefully selected natural essentials — beautifully packaged and delivered fast.</p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn large">Shop Featured</a>
+            <a href="about.html" class="btn ghost">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/700x500?text=Premium+Products" alt="Premium products">
+        </div>
       </div>
     </section>
 
     <section class="features container">
-      <article>
-        <h3>Quality Products</h3>
-        <p>Carefully selected items to ensure value and satisfaction.</p>
+      <article class="feature-card">
+        <div class="icon">✓</div>
+        <h3>Premium Sourcing</h3>
+        <p>Sustainably sourced ingredients, tested for quality.</p>
       </article>
-      <article>
-        <h3>Fast Shipping</h3>
-        <p>Reliable delivery across India with tracking support.</p>
+      <article class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Fast Delivery</h3>
+        <p>Quick dispatch and reliable courier partners across India.</p>
       </article>
-      <article>
-        <h3>Customer Support</h3>
-        <p>Friendly support to help with orders and returns.</p>
+      <article class="feature-card">
+        <div class="icon">🛡️</div>
+        <h3>Hassle-free Returns</h3>
+        <p>Simple 7-day return policy for damaged or incorrect items.</p>
       </article>
     </section>
 
-    <section class="product-preview container">
-      <h2>Featured Products</h2>
+    <section class="container product-preview">
+      <h2 class="section-title">Featured Products</h2>
       <div class="grid">
         <div class="card">
-          <img src="https://via.placeholder.com/400x300?text=Product+1" alt="Product 1" />
-          <h4>Sample Product 1</h4>
-          <p class="price">₹299</p>
-          <a class="btn" href="contact.html">Order Now</a>
+          <div class="card-media"><img src="https://via.placeholder.com/500x350?text=Coconut+Oil" alt=""></div>
+          <div class="card-body">
+            <h4>Natural Coconut Oil</h4>
+            <p class="price">₹299</p>
+            <p class="muted">Virgin cold-pressed oil for hair & skin</p>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
         </div>
+
         <div class="card">
-          <img src="https://via.placeholder.com/400x300?text=Product+2" alt="Product 2" />
-          <h4>Sample Product 2</h4>
-          <p class="price">₹499</p>
-          <a class="btn" href="contact.html">Order Now</a>
+          <div class="card-media"><img src="https://via.placeholder.com/500x350?text=Aloe+Vera" alt=""></div>
+          <div class="card-body">
+            <h4>Aloe Vera Gel</h4>
+            <p class="price">₹199</p>
+            <p class="muted">Soothing hydration for daily care</p>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
         </div>
+
         <div class="card">
-          <img src="https://via.placeholder.com/400x300?text=Product+3" alt="Product 3" />
-          <h4>Sample Product 3</h4>
-          <p class="price">₹199</p>
-          <a class="btn" href="contact.html">Order Now</a>
+          <div class="card-media"><img src="https://via.placeholder.com/500x350?text=Handmade+Soap" alt=""></div>
+          <div class="card-body">
+            <h4>Handmade Soap</h4>
+            <p class="price">₹99</p>
+            <p class="muted">Natural scents, gentle formula</p>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 ZyntexShopping. All rights reserved.</p>
-      <p><small>Contact: support@zyntexshopping.com | +91 90000 00000</small></p>
-    </div>
-  </footer>
+    <
 
-<script src="js/script.js"></script>
-</body>
-</html>
