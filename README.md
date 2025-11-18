@@ -1,20 +1,18 @@
-# ZyntexShopping — Static Website Template
+# ZyntexShopping — Premium Static Template (Theme A)
 
-This is a simple, responsive static website template for a shopping store named **ZyntexShopping**.
-It is ready to upload to GitHub Pages or any static hosting (Firebase Hosting, Netlify, Vercel).
+Files:
+- index.html
+- products.html
+- about.html
+- contact.html
+- policies.html
+- css/style.css
+- js/script.js
 
-## Files
-- index.html — Home page
-- products.html — Products listing
-- about.html — About page
-- contact.html — Contact & Order form link
-- policies.html — All policy pages combined
-- css/style.css — Stylesheet
-- js/script.js — Minimal JavaScript
+How to publish on GitHub Pages:
+1. Create repository `zyntexshopping` (public) under user `dharnish777`.
+2. Upload all files and folders (preserve directories).
+3. Settings → Pages → Source → Select branch `main` and folder `/ (root)` → Save.
+4. Wait ~30–60s. Open: https://dharnish777.github.io/zyntexshopping/
 
-## How to publish on GitHub Pages
-1. Create a GitHub repository (public) named `zyntexshopping`.
-2. Upload all files and folders preserving structure.
-3. Go to Settings → Pages → Source → Choose `main` branch and `/ (root)` folder → Save.
-4. Your site will be available at `https://<yourusername>.github.io/zyntexshopping/`.
 
