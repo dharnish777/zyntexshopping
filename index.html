@@ -1,121 +1,254 @@
-<!doctype html>
+<!-- Premium E‑Commerce Website Template (ZyntexShopping) -->
+<!-- Full professional premium UI, HTML + CSS + JS in one file for easy GitHub upload -->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ZyntexShopping — Premium</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZyntexShopping - Premium Store</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="theme-color" content="#ffffff">
+    <style>
+        /* ---------------- Global Styles ---------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f8f9fb;
+            color: #222;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* ---------------- Navbar ---------------- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #007bff;
+        }
+
+        /* ---------------- Hero Section ---------------- */
+        .hero {
+            margin-top: 100px;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 60px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .hero-btn {
+            margin-top: 25px;
+            display: inline-block;
+            background: #111;
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .hero-btn:hover {
+            background: #007bff;
+        }
+
+        .hero-img img {
+            width: 480px;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+        }
+
+        /* ---------------- Product Grid ---------------- */
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+            margin-top: 80px;
+        }
+
+        .products {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 0 60px 80px;
+        }
+
+        .product-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .product-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.13);
+        }
+
+        .product-box img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .product-box h3 {
+            font-size: 20px;
+            margin-top: 12px;
+        }
+
+        .price {
+            margin-top: 5px;
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        .buy-btn {
+            margin-top: 12px;
+            display: inline-block;
+            background: #111;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background: #007bff;
+        }
+
+        /* ---------------- Footer ---------------- */
+        footer {
+            margin-top: 80px;
+            padding: 40px;
+            text-align: center;
+            background: #111;
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
 </head>
-<body class="theme-a">
-  <header class="site-header glass">
-    <div class="container header-inner">
-      <div class="brand-wrap">
-        <div class="logo">Zyntex<span class="logo-accent">Shopping</span></div>
-        <div class="tag">Premium Natural Products</div>
-      </div>
+<body>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
-        <a href="policies.html">Policies</a>
-        <a href="contact.html" class="btn small">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ZyntexShopping</div>
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 
-  <main>
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Natural products, premium experience</h1>
-          <p class="lead">ZyntexShopping brings carefully selected natural essentials — beautifully packaged and delivered fast.</p>
-          <div class="hero-actions">
-            <a href="products.html" class="btn large">Shop Featured</a>
-            <a href="about.html" class="btn ghost">Our Story</a>
-          </div>
+            <h1>Shop Smart.<br>Shop Premium.</h1>
+            <p>Welcome to ZyntexShopping — your trusted online shopping destination for quality products with fast delivery and premium support.</p>
+            <a class="hero-btn" href="#products">Explore Now</a>
         </div>
-
-        <div class="hero-image">
-          <img src="https://via.placeholder.com/900x600?text=ZyntexShopping+Premium" alt="Premium products">
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Shopping Banner">
         </div>
-      </div>
     </section>
 
-    <section class="features container">
-      <article class="feature-card">
-        <div class="icon">✓</div>
-        <h3>Premium Sourcing</h3>
-        <p>Sustainably sourced ingredients, tested for quality.</p>
-      </article>
-      <article class="feature-card">
-        <div class="icon">⚡</div>
-        <h3>Fast Delivery</h3>
-        <p>Quick dispatch and reliable courier partners across India.</p>
-      </article>
-      <article class="feature-card">
-        <div class="icon">🛡️</div>
-        <h3>Hassle-free Returns</h3>
-        <p>Simple 7-day return policy for damaged or incorrect items.</p>
-      </article>
-    </section>
+    <!-- Products Section -->
+    <h2 class="section-title" id="products">Our Best Sellers</h2>
 
-    <section class="container product-preview">
-      <h2 class="section-title">Featured Products</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-media"><img src="https://via.placeholder.com/600x420?text=Coconut+Oil" alt="Coconut Oil"></div>
-          <div class="card-body">
-            <h4>Natural Coconut Oil</h4>
-            <p class="price">₹299</p>
-            <p class="muted">Virgin cold-pressed oil for hair & skin</p>
-            <a class="btn" href="contact.html">Order Now</a>
-          </div>
+    <div class="products">
+        <div class="product-box">
+            <img src="https://m.media-amazon.com/images/I/61X9Z3orAFL._AC_UY327_.jpg" />
+            <h3>Premium Headphones</h3>
+            <p class="price">₹2,499</p>
+            <a class="buy-btn">Buy Now</a>
         </div>
 
-        <div class="card">
-          <div class="card-media"><img src="https://via.placeholder.com/600x420?text=Aloe+Vera" alt="Aloe Vera"></div>
-          <div class="card-body">
-            <h4>Aloe Vera Gel</h4>
-            <p class="price">₹199</p>
-            <p class="muted">Soothing hydration for daily care</p>
-            <a class="btn" href="contact.html">Order Now</a>
-          </div>
+        <div class="product-box">
+            <img src="https://m.media-amazon.com/images/I/71tCOhEkolL._AC_UY327_.jpg" />
+            <h3>Smart Fitness Watch</h3>
+            <p class="price">₹1,899</p>
+            <a class="buy-btn">Buy Now</a>
         </div>
 
-        <div class="card">
-          <div class="card-media"><img src="https://via.placeholder.com/600x420?text=Handmade+Soap" alt="Handmade Soap"></div>
-          <div class="card-body">
-            <h4>Handmade Soap</h4>
-            <p class="price">₹99</p>
-            <p class="muted">Natural scents, gentle formula</p>
-            <a class="btn" href="contact.html">Order Now</a>
-          </div>
+        <div class="product-box">
+            <img src="https://m.media-amazon.com/images/I/71m-tTHuYCL._AC_UY327_.jpg" />
+            <h3>Bluetooth Speaker</h3>
+            <p class="price">₹999</p>
+            <a class="buy-btn">Buy Now</a>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <div class="brand-footer">ZyntexShopping</div>
-        <p class="muted">Premium natural products delivered with care.</p>
-      </div>
-      <div class="footer-contact">
-        <p><strong>Email</strong><br>support@zyntexshopping.com</p>
-        <p><strong>Phone</strong><br>+91 90000 00000</p>
-      </div>
+        <div class="product-box">
+            <img src="https://m.media-amazon.com/images/I/61o0P2f9FFL._AC_UY327_.jpg" />
+            <h3>Designer Backpack</h3>
+            <p class="price">₹799</p>
+            <a class="buy-btn">Buy Now</a>
+        </div>
     </div>
-  </footer>
 
-  <script src="js/script.js"></script>
+    <!-- Footer -->
+    <footer>
+        © 2025 ZyntexShopping • All Rights Reserved
+    </footer>
+
 </body>
 </html>
+
 
 
