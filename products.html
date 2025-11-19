@@ -1,72 +1,20 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Products — ZyntexShopping</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="theme-a">
-  <header class="site-header glass">
-    <div class="container header-inner">
-      <div class="brand-wrap">
-        <div class="logo">Zyntex<span class="logo-accent">Shopping</span></div>
-        <div class="tag">Premium Natural Products</div>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
-        <a href="policies.html">Policies</a>
-        <a href="contact.html" class="btn small">Contact</a>
-      </nav>
-    </div>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Products — ZyntexShopping</title><link rel="stylesheet" href="css/style.css"></head><body>
+  <header class="header container">
+    <div class="brand">ZyntexShopping</div>
+    <nav class="nav"><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart <span id="cart-count"></span></a></nav>
+    <div class="actions"><div id="theme-toggle" style="cursor:pointer;padding:8px">🌓</div></div>
   </header>
 
+  <div class="floating-search"><input id="advSearchInput" placeholder="Search for products, categories..." /><div class="search-actions"></div><div id="suggestionsBox" class="search-suggestions"></div></div>
+
   <main class="container">
-    <h1 class="section-title">All Products</h1>
-    <div class="grid">
-      <div class="card">
-        <div class="card-media"><img src="https://via.placeholder.com/800x560?text=Coconut+Oil" alt=""></div>
-        <div class="card-body">
-          <h4>Natural Coconut Oil</h4>
-          <p class="price">₹299</p>
-          <p class="muted">Premium virgin oil for skin & hair.</p>
-          <a class="btn" href="contact.html">Order Now</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-media"><img src="https://via.placeholder.com/800x560?text=Aloe+Vera" alt=""></div>
-        <div class="card-body">
-          <h4>Aloe Vera Gel</h4>
-          <p class="price">₹199</p>
-          <p class="muted">Pure soothing gel for skin care.</p>
-          <a class="btn" href="contact.html">Order Now</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-media"><img src="https://via.placeholder.com/800x560?text=Handmade+Soap" alt=""></div>
-        <div class="card-body">
-          <h4>Handmade Soap</h4>
-          <p class="price">₹99</p>
-          <p class="muted">Gentle, natural ingredients.</p>
-          <a class="btn" href="contact.html">Order Now</a>
-        </div>
-      </div>
-    </div>
+    <h2 class="section-title">All Products</h2>
+    <div id="grid" class="grid"></div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="brand-footer">ZyntexShopping</div>
-      <div class="footer-contact"><p><strong>Email</strong><br>support@zyntexshopping.com</p></div>
-    </div>
-  </footer>
+  <footer class="footer">© 2025 ZyntexShopping</footer>
+  <script src="js/app.js"></script>
+</body></html>
 
-  <script src="js/script.js"></script>
-</body>
-</html>
 
