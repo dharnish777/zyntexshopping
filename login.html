@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Login — ZyntexShopping</title><link rel="stylesheet" href="css/style.css"></head><body>
+  <header class="header container"><div class="brand">ZyntexShopping</div></header>
+  <main class="container">
+    <div class="form-card">
+      <h2>Login</h2>
+      <input id="login-email" placeholder="Email">
+      <input id="login-pass" placeholder="Password" type="password">
+      <button class="btn" onclick="doLogin()">Login</button>
+      <div style="margin-top:12px">Don't have an account? <a href="signup.html">Sign up</a></div>
+    </div>
+  </main>
+  <script>
+    function doLogin(){
+      const e=document.getElementById('login-email').value, p=document.getElementById('login-pass').value;
+      const res = (window.login && login(e,p)) || {ok:false, msg:'Auth not configured'};
+      if(res.ok) location.href='index.html'; else alert(res.msg || 'Login failed');
+    }
+  </script>
+</body></html>
