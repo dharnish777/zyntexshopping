@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Sign Up — ZyntexShopping</title><link rel="stylesheet" href="css/style.css"></head><body>
+  <header class="header container"><div class="brand">ZyntexShopping</div></header>
+  <main class="container">
+    <div class="form-card">
+      <h2>Create account</h2>
+      <input id="su-name" placeholder="Full name">
+      <input id="su-email" placeholder="Email">
+      <input id="su-pass" placeholder="Password" type="password">
+      <button class="btn" onclick="doSignup()">Create account</button>
+    </div>
+  </main>
+  <script>
+    function doSignup(){
+      const n=document.getElementById('su-name').value, e=document.getElementById('su-email').value, p=document.getElementById('su-pass').value;
+      const res = (window.signup && signup(e,p,n)) || {ok:false, msg:'Auth not configured'};
+      if(res.ok) location.href='index.html'; else alert(res.msg || 'Signup failed');
+    }
+  </script>
+</body></html>
